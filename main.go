@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 const (
 	A int = 1
@@ -14,4 +16,16 @@ func main() {
 	fmt.Println(num1, num2)
 	fmt.Println(A, B, c)
 	fmt.Println("hello world")
+	var a, b = bio(20, "joy")
+	fmt.Println(b)
+	fmt.Printf("you are %v years old\n", a)
+
+	var _, result = bio(10, "mahmud")
+	fmt.Println((result))
+
+}
+func bio(age int, name string) (myage int, result string) {
+	result = "hello " + name
+	myage = age + 10
+	return
 }
